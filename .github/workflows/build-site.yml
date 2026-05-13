@@ -97,8 +97,8 @@ jobs:
       - uses: actions/checkout@v6
         name: checkout root project
         with:
-          ref: master
-          repository: dimaslanjaka/static-blog-generator-hexo
+          ref: testing
+          repository: gowridurgad/static-blog-generator-hexo
           # submodules: recursive
           token: '${{ secrets.ACCESS_TOKEN || secrets.GITHUB_TOKEN }}'
           lfs: ''
