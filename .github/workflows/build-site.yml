@@ -106,7 +106,7 @@ jobs:
         with:
           node-version: ${{ env.node_version }}
           cache-dependency-path: '**/package.json'
-          package-manager-cache: false
+          # package-manager-cache: false
           cache: 'yarn'
           token: '${{ secrets.ACCESS_TOKEN || secrets.GITHUB_TOKEN }}'
       - name: Install libcurl dev
