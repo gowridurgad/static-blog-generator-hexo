@@ -102,7 +102,7 @@ jobs:
           # submodules: recursive
           token: '${{ secrets.ACCESS_TOKEN || secrets.GITHUB_TOKEN }}'
           lfs: ''
-      - run: corepack enable
+      # - run: corepack enable
       - uses: actions/setup-node@v6
         with:
           node-version: ${{ env.node_version }}
@@ -243,7 +243,7 @@ jobs:
           restore-keys: |
             ${{ env.cache-key }}-*
             ${{ env.cache-key }}
-      # - run: corepack enable
+      - run: corepack enable
       - name: Set env
         id: set-env
         shell: bash
